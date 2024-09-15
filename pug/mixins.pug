@@ -1,0 +1,18 @@
+mixin tourItem(image, price, title, review, reviewCount, duration, tourPrice)
+    .tour
+        .tour-top
+            img.tour-image(src= image, alt='this-is-image')
+            span.tour-price= price
+        .tour-content
+            h2.tour-title= title
+            .tour-rating
+                .tour-review
+                    .tour-star
+                        img(src='./images/star.png', alt='tour-rating')
+                    .tour-review-count
+                        span= review 
+                            |   (#{reviewCount} reviews)
+                span.tour-duration
+                    | Duration: #{duration} hours
+            a.tour-button(target='_blank', rel='noopener noreferrer', href='https://www.youtube.com/watch?v=4g_AgjhYyaw')
+                | Tours Price $#{tourPrice}

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+ 
+  font-weight: 500px;
+ background-color: aliceblue;
+ padding: 40px 0;
+}
+.tour{
+    
+    
+    
+    background-color: white;
+    border-radius: 10px;
+    /* margin-left: 30px; */
+    /* sử dụng margin */
+    width: calc(33.33% - 30px);
+    /* sử dụng gap */
+    width: calc(33.33% - 20px);
+    /* margin-bottom: 30px; */
+    row-gap: 30px;
+    word-break: break-all;
+   
+   
+
+  
+}
+.tour-content {
+    padding: 20px 20px 14px 20px;
+}
+
+.tour-title{
+    margin-bottom: 20px;
+    color: #23262F;
+    font-weight: 500;
+    /* padding-bottom: 10px; */
+    font-size: 18px;
+    line-height: 1.556;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.tour-rating{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tour-review{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tour-review-count{
+    margin-left: 11px;
+}
+
+.tour-review-count,
+.tour-duration{
+    color: #3B3E44;
+}
+.tour-button{
+    font-size: 14px;
+    color: white;
+    padding: 8px 17px;
+    background-color: #3B71FE ;
+    border-radius:8px ;
+    line-height: 17px;
+    display: inline-block;
+}
+.tour-image{
+    border-radius: 10px 10px 0 0 ;
+    width: 100%;
+    object-fit: cover;
+    height: 239px;
+    display: block ;
+}
+.tour-list-container{
+    width: 100%;
+    max-width: 1170px;
+    /* margin-right: auto ;
+    margin-left: auto ;
+ */
+    margin: 0 auto;
+}
+.tour-list{
+    
+    /* display: inline-flex; */
+    display: flex ;
+    flex-direction:row ;
+    align-items: stretch;
+    /* margin-left: -30px; */
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    gap: 30px;
+   
+}
+.tour-top{
+    /* để tour-price chạy theo position của tour-top */
+    position: relative;
+    
+}
+.tour-price{
+    position: absolute;
+    display: inline-block;
+    top: 24px;
+    left: 30px;
+    font-size: 12px;
+    color: #FCFCFD;
+    font-weight: 500;
+    background-color:rgba(53, 57, 69, 0.8);
+    padding: 5px 16px;
+    border-radius: 6px;
+
+
+    
+   
+}
