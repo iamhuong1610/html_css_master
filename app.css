@@ -8,7 +8,7 @@ body{
  
   font-weight: 500px;
  background-color: aliceblue;
- padding: 40px 0;
+ padding: 40px 24px;
 }
 .tour{
     
@@ -121,4 +121,47 @@ body{
 
     
    
+}
+
+/* @media screen and (min-width: breakpoints)
+ @media screen and (min-width: 320px) */
+
+
+/* @media screen and (max-width: breakpoints - 1px) */
+
+/* @media screen and (max-width: breakpoints - 0.2) */
+
+
+/* @media screen and (min-width: breakpoint) and (max-width: breakpoint){}*/
+@media  screen and (max-width: 767.98px){
+
+    .tour-list{
+        row-gap: 20px;
+
+    }
+    .tour{
+        width: 100%;
+        font-size: 16px;
+    }
+    .tour-title{
+        margin-bottom: 12px;
+    }
+    .tour-rating{
+        font-size: 12px;
+    }
+    .tour-button{
+        font-size: 12px;
+    }
+    .tour-content{
+        padding: 17px 17px 8px;
+    }
+    .tour-image{
+        height: 211px;
+    
+    }
+}
+@media screen and(min-width: 768px) and(max-width:1023.98px){
+    .tour{
+        background-color: red;
+    }
 }

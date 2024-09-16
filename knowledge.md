@@ -55,3 +55,16 @@ _calc_ : hàm dùng để tính toán +, -, \* , /, lưu ý là phải có kho�
       _whitle-space_: nowrap ko cho chữ rớt xuống hàng
   - \_text-overflow\_:ellipsis dấu ...
   - _overflow_: hidden , để khi mà chữ tràn ra ngoài thì nó sẽ cut đi
+
+.....bài 13....
+
+- reponsive: hiển thị tốt trên các màn hình thông dụng như laptop, ipad, điện thoại
+
+-_breakpoint_ : 320, 480, 768, 1024, 1200, 1366, 1440, 1600, 1920
+vd nếu để max-width ; 1170 ,độ rộng 1129 < 1170 ,dính sát lề
+
+>
+
+- _min-width_
+- _max-width_
+- _media queries_
