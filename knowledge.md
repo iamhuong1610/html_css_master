@@ -68,3 +68,5 @@ vd nếu để max-width ; 1170 ,độ rộng 1129 < 1170 ,dính sát lề
 - _min-width_
 - _max-width_
 - _media queries_
+
+_inset: 0 nghĩa là 4 bên đều có giá trị 0_
