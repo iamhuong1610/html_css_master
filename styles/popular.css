@@ -15,7 +15,8 @@ img{
     max-width:100%;
 }
 .container{
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
     margin: 0 auto;
 }
 .popular-list{
@@ -50,15 +51,21 @@ img{
 .popular-label{
     position: absolute;
     right: 20px;
-    bottom: -11.5px;
+    bottom: 0;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     color: #f4f5f6;
     background-color: #3B71FE;
     border-radius: 30px;
     padding: 4px 18px;
+   
+    transform: translateY(50%);
+    transform: translate(20px, 50%);
+    transform: translate(0,50%);
 
 
 
@@ -117,3 +124,19 @@ border-radius: 14px 14px 0 0;
 
 
 }
+@media screen and (max-width: 1023.98px) {
+    .popular-item{
+        width: calc(50%-30px);
+        margin-bottom: 30px;
+    }
+
+}
+@media screen and (max-width: 767.98px) {
+    .popular-item{
+        width: 100%;
+        
+    }
+}
+
+
+

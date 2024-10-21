@@ -65,8 +65,16 @@ vd nếu để max-width ; 1170 ,độ rộng 1129 < 1170 ,dính sát lề
 
 >
 
-- _min-width_
-- _max-width_
+- _min-width_: breakpoint
+- _max-width_: breakpoint - 0.2px
 - _media queries_
 
 _inset: 0 nghĩa là 4 bên đều có giá trị 0_
+
+\_transform\_ : translate(translateX(value), translateY(value)), skew(skewX, skewY), rotate(rotateX, rotateY,Z), scale(scaleX, scaleY)
+
+- tác động vào vật thể làm nó biến đối hình dạng nhưng vị trí vẫn ở nguyên
+
+- 'translateX': dịch chuyển qua bên phải nếu giá trị là số dương
+- 'translateY': nếu giá trị là số dương thì nó đi xuống, ngược lại thì nó sẽ đi lên
+  -'value': 10px,20px... 10%. Lứu ý : khi sử dụng phần trăm thì % ở đây chính là độ rộng hoặc chiều cao của khối chúng ta đang áp dụng thuộc tính transfrom và hàm translate
