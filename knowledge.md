@@ -78,3 +78,5 @@ _inset: 0 nghĩa là 4 bên đều có giá trị 0_
 - 'translateX': dịch chuyển qua bên phải nếu giá trị là số dương
 - 'translateY': nếu giá trị là số dương thì nó đi xuống, ngược lại thì nó sẽ đi lên
   -'value': 10px,20px... 10%. Lứu ý : khi sử dụng phần trăm thì % ở đây chính là độ rộng hoặc chiều cao của khối chúng ta đang áp dụng thuộc tính transfrom và hàm translate
+  \_ bair 16: css variable
+  variables
