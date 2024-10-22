@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* variables
+khai bao: 
+-- primary-color: #FF6651
+--secondary-color: #2cccff
+--text-color: :read-only
+--font-size-sm: 16px 
+-- sử dụng 
+var(--font-size-sm)*/
+:root{
+    --primary-color: blue;
+}
 body{
     font-family: "Inter", sans-serif;
  
@@ -10,25 +21,7 @@ body{
  background-color: aliceblue;
  padding: 40px 24px;
 }
-.tour{
-    
-    
-    
-    background-color: white;
-    border-radius: 10px;
-    /* margin-left: 30px; */
-    /* sử dụng margin */
-    width: calc(33.33% - 30px);
-    /* sử dụng gap */
-    width: calc(33.33% - 20px);
-    /* margin-bottom: 30px; */
-    row-gap: 30px;
-    word-break: break-all;
-   
-   
 
-  
-}
 .tour-content {
     padding: 20px 20px 14px 20px;
 }
@@ -68,7 +61,7 @@ body{
     font-size: 14px;
     color: white;
     padding: 8px 17px;
-    background-color: #3B71FE ;
+    background-color: var(--primary-color) ;
     border-radius:8px ;
     line-height: 17px;
     display: inline-block;
@@ -89,6 +82,9 @@ body{
     margin: 0 auto;
 }
 .tour-list{
+    --columns: 3;
+    --gap: 30px;
+    --spacing: calc(((var(--columns)- 1) * var(--gap)) / var(--columns));
     
     /* display: inline-flex; */
     display: flex ;
@@ -96,10 +92,29 @@ body{
     align-items: stretch;
     /* margin-left: -30px; */
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
-    gap: 30px;
+    column-gap: var(--gap);
+    row-gap: var(--gap);
+    gap: var(--gap);
    
+}
+.tour{
+    
+    
+    
+    background-color: white;
+    border-radius: 10px;
+    /* margin-left: 30px; */
+    /* sử dụng margin */
+   
+    /* sử dụng gap */
+    width: calc((100% / var(--columns)) - 20px);
+    /* margin-bottom: 30px; */
+   
+    word-break:  break-word;
+   
+   
+
+  
 }
 .tour-top{
     /* để tour-price chạy theo position của tour-top */
@@ -165,3 +180,6 @@ body{
         background-color: red;
     }
 }
+
+/* variables */
+

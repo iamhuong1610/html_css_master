@@ -68,3 +68,12 @@ vd nếu để max-width ; 1170 ,độ rộng 1129 < 1170 ,dính sát lề
 - _min-width_
 - _max-width_
 - _media queries_
+  -variables\_ khai báo 1 giá trị để có thể sử dụng đi , sd lại, khi thay đổi giá trị của biến thì nó sẽ được cập nhật ở những chỗ sử dụng nó
+  \_ khai bao bien: :root{} , html{}
+  dat ten bien: tieng anh , tieng viet ko dau
+
+  - ưu tiên cái gần nhất để css
+  - cách khai báo: --variable-name: value;
+  - ưu điểm;sửa 1 chỗ cập nhật nhiều nơi
+
+  - nhược : viết nhiều code hơn, suy nghĩ đặt tên biến
